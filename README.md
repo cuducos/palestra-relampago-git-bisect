@@ -1,6 +1,10 @@
-# Exemplo de uso
+# Calculadora
 
-## Modo interativo
+Mini-calculadora criada para uma palestra relâmpado sobre `git bisect`. Tem até uma [colinha](TUTORIAL.md)!
+
+## Exemplo de uso
+
+### Modo interativo
 
 ```console
 $ python -m calculadora
@@ -8,7 +12,7 @@ $ python -m calculadora
 42
 ```
 
-## Passando uma expressão
+### Passando uma expressão
 
 ```console
 $ python -m calculadora --expressão "40 + 2" 
@@ -17,6 +21,6 @@ $ python -m calculadora --expressão "40 + 2"
 
 A opção `--expressão` pode ser abreviada como `-e`.
 
-## Saindo da calculadora
+### Saindo da calculadora
 
 Digite `sair` para sair da calculadora.

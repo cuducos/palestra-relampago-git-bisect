@@ -10,7 +10,8 @@ def pergunta(expressão=None):
         expressão = prompt("=>", prompt_suffix=" ")
 
     if expressão == "sair":
-        exit("Até mais, arroba 💜")
+        secho("Até mais, arroba 💜")
+        exit()
 
     try:
         return parse(expressão)

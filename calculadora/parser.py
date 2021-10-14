@@ -1,9 +1,9 @@
 from re import compile, match
 
-from calculadora import adição, subtração, multiplicação
+from calculadora import adição, subtração, multiplicação, divisão
 
 REGEX = compile(r"(?P<x>\d+)\s?(?P<função>[+\-*/])\s?(?P<y>\d+)")
-MAPPING = {"+": adição, "-": subtração, "*": multiplicação}
+MAPPING = {"+": adição, "-": subtração, "*": multiplicação, "/": divisão}
 
 
 class ParserError(Exception):

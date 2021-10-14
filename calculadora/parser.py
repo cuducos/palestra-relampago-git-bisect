@@ -1,6 +1,6 @@
 from re import compile, match
 
-from calculadora import adição, subtração, multiplicação, divisão
+from calculadora import adição, divisão, multiplicação, subtração
 
 REGEX = compile(r"(?P<x>\d+)\s?(?P<função>[+\-*/])\s?(?P<y>\d+)")
 MAPPING = {"+": adição, "-": subtração, "*": multiplicação, "/": divisão}

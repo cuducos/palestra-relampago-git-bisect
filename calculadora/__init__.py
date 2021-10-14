@@ -11,4 +11,4 @@ def multiplicação(x, y):
 
 
 def divisão(x, y):
-    return x / y
+    return int(x / y)

@@ -1,6 +1,6 @@
 # Calculadora
 
-Mini-calculadora criada para uma palestra relâmpado sobre `git bisect`. Tem até uma [colinha](TUTORIAL.md)!
+Mini-calculadora criada para uma [palestra relâmpado sobre `git bisect`](https://youtu.be/1lwUkllIwC8). Tem até uma [colinha](TUTORIAL.md)!
 
 ## Exemplo de uso
 

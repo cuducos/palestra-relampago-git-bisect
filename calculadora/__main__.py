@@ -1,3 +1,5 @@
+from sys import exit
+
 from click import command, option, secho, prompt
 
 from calculadora.parser import ParserError, parse
@@ -6,6 +8,9 @@ from calculadora.parser import ParserError, parse
 def pergunta(expressão=None):
     if not expressão:
         expressão = prompt("=>", prompt_suffix=" ")
+
+    if expressão == "sair":
+        exit("Até mais, arroba 💜")
 
     try:
         return parse(expressão)

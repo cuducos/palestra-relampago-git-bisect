@@ -16,3 +16,7 @@ $ python -m calculadora --expressão "40 + 2"
 ```
 
 A opção `--expressão` pode ser abreviada como `-e`.
+
+## Saindo da calculadora
+
+Digite `sair` para sair da calculadora.

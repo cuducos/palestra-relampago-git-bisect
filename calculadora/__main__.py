@@ -1,10 +1,12 @@
-from click import secho, prompt
+from click import command, option, secho, prompt
 
 from calculadora.parser import ParserError, parse
 
 
-def pergunta():
-    expressão = prompt("=>", prompt_suffix=" ")
+def pergunta(expressão=None):
+    if not expressão:
+        expressão = prompt("=>", prompt_suffix=" ")
+
     try:
         return parse(expressão)
     except ParserError as error:
@@ -13,9 +15,11 @@ def pergunta():
     return pergunta()
 
 
-def cli():
+@command()
+@option("-e", "--expressão")
+def cli(expressão=None):
     """Calculadora na sua linha de comando"""
-    função, x, y = pergunta()
+    função, x, y = pergunta(expressão)
     resultado = função(x, y)
     secho(str(resultado), fg="green")
 
